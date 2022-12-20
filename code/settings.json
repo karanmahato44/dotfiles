@@ -1,0 +1,11 @@
+{
+    "telemetry.telemetryLevel": "off",
+    "workbench.iconTheme": "material-icon-theme",
+    "window.titleBarStyle": "custom",
+    "workbench.startupEditor": "none",
+    "editor.mouseWheelZoom": true,
+    "explorer.confirmDelete": false,
+    "editor.minimap.enabled": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "extensions.ignoreRecommendations": true
+}
