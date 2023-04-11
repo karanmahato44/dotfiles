@@ -1,11 +1,35 @@
 {
     "telemetry.telemetryLevel": "off",
-    "workbench.iconTheme": "material-icon-theme",
-    "window.titleBarStyle": "custom",
     "workbench.startupEditor": "none",
-    "editor.mouseWheelZoom": true,
-    "explorer.confirmDelete": false,
-    "editor.minimap.enabled": false,
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
     "security.workspace.trust.untrustedFiles": "open",
-    "extensions.ignoreRecommendations": true
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.fontFamily": "'Cascadia Mono'",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        },
+        "Windows PowerShell": {
+            "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+        }
+    },
+    "editor.mouseWheelZoom": true,
+    "editor.minimap.enabled": false,
+    "editor.linkedEditing": true,
+    "java.inlayHints.parameterNames.enabled": "none",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "editor.accessibilitySupport": "off",
+    "editor.tabSize": 2
 }

@@ -1,38 +1,33 @@
-// Place your key bindings in this file to override the defaults
+// Place your key bindings in this file to override the defaultsauto[]
 [
-    // Toggle between terminal and editor focus
-{
-    "key":     "ctrl+j",
-    "command": "workbench.action.terminal.focus"
-},
-{
-    "key":     "ctrl+j",
-    "command": "workbench.action.focusActiveEditorGroup",
-    "when":    "terminalFocus"
-},
-{
-    "key": "ctrl+alt+w",
-    "command": "editor.emmet.action.wrapWithAbbreviation"
-},
-{
-    "key": "shift+alt+down",
-    "command": "editor.action.copyLinesDownAction",
-    "when": "editorTextFocus && !editorReadonly"
-},
-{
-    "key": "ctrl+shift+alt+down",
-    "command": "-editor.action.copyLinesDownAction",
-    "when": "editorTextFocus && !editorReadonly"
-},
-{
-    "key": "shift+alt+up",
-    "command": "editor.action.copyLinesUpAction",
-    "when": "editorTextFocus && !editorReadonly"
-},
-{
-    "key": "ctrl+shift+alt+up",
-    "command": "-editor.action.copyLinesUpAction",
-    "when": "editorTextFocus && !editorReadonly"
-}
-
+        // Toggle between terminal and editor focus
+    {
+        "key":     "ctrl+j",
+        "command": "workbench.action.terminal.focus"
+    },
+    {
+        "key":     "ctrl+j",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when":    "terminalFocus"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-python.execSelectionInTerminal",
+        "when": "editorTextFocus && !findInputFocussed && !jupyter.ownsSelection && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-jupyter.execSelectionInteractive",
+        "when": "editorTextFocus && isWorkspaceTrusted && jupyter.ownsSelection && !findInputFocussed && !jupyter.webExtension && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+    },
+    {
+        "key": "ctrl+k ctrl+f",
+        "command": "workbench.action.closeFolder",
+        "when": "emptyWorkspaceSupport && workbenchState != 'empty'"
+    },
+    {
+        "key": "ctrl+k f",
+        "command": "-workbench.action.closeFolder",
+        "when": "emptyWorkspaceSupport && workbenchState != 'empty'"
+    }
 ]
